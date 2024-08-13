@@ -5,6 +5,9 @@
 # Evaluate the following complex expressions:
 # 1. (3 + 5 * 2) > (10 / 2) and (not (4 == 4) or 7 % 2 == 1)
 #       13>5 and false or true => true and false or true => true and true => true
+import math
+
+
 print(True)
 # 2. "Data" * 3 + "Science" > "DataScience"
 #       DataDataDataScience > DataSciene
@@ -43,7 +46,7 @@ def combine_and_convert(num, num_str):
 # 2. Returns the square root of the number if the boolean is False.
 
 def mixed_operations(num, flag):
-    if num:
+    if flag == True:
         return num*num
     else:
         return math.sqrt(num)
@@ -54,5 +57,8 @@ def mixed_operations(num, flag):
 # Write a Python function that compares the data types of two inputs and returns True if they are the same, and False otherwise.
 
 def compare_types(a, b):
-    # Your code here
+    if type(a) == type(b):
+        return True
+    else:
+        return False
     pass
