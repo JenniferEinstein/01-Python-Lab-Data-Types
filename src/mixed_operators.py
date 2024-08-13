@@ -4,8 +4,16 @@
 # ---------------------------
 # Evaluate the following complex expressions:
 # 1. (3 + 5 * 2) > (10 / 2) and (not (4 == 4) or 7 % 2 == 1)
+#       13>5 and false or true => true and false or true => true and true => true
+print(True)
 # 2. "Data" * 3 + "Science" > "DataScience"
+#       DataDataDataScience > DataSciene
+#       both sides of the equation evaluate to True, so they are equal (NO, but why?)
+print (False)
+
 # 3. 100 > 50 and "Code" == "code".upper()
+#       100 IS greater than 50 but Code isn't CODE
+print(False)
 
 # Write the answers in comments below each expression and print the results.
 
@@ -17,7 +25,15 @@
 # 3. Returns the final result.
 
 def combine_and_convert(num, num_str):
-    # Your code here
+    # converted = int(num_str)
+    # added = num+converted
+    # strung = str(added)
+    # final = strung+num_str
+    # print(final)
+
+    strung = str(num+int(num_str))
+    final = strung+num_str
+    print(final)
     pass
 
 # Task 3: Mixed Type Handling
@@ -27,7 +43,10 @@ def combine_and_convert(num, num_str):
 # 2. Returns the square root of the number if the boolean is False.
 
 def mixed_operations(num, flag):
-    # Your code here
+    if num:
+        return num*num
+    else:
+        return math.sqrt(num)
     pass
 
 # Task 4: Data Type Comparison
