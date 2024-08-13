@@ -37,6 +37,7 @@ def combine_and_convert(num, num_str):
     strung = str(num+int(num_str))
     final = strung+num_str
     print(final)
+    return final
     pass
 
 # Task 3: Mixed Type Handling

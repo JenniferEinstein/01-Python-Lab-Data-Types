@@ -33,8 +33,11 @@ def is_divisible(x, y):
 # 2. Negative, odd, and greater than -10.
 
 def complex_check(n):
-    if (n>0 and n%2==0 and n%3==0) or (n<0 and n%2==1 and n>-10):
+    if (n>0 and n%2==0 and n%3==0):
         return True
+    elif (n<0 and n%2!=0 and n>-10):
+        return True
+    else: return False
     pass
 
 # Task 4: Boolean Type Conversion
